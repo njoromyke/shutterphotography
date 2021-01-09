@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body loader */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #000000;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+/* end loader */
+body{
+    background: linear-gradient(rgba(36, 30, 30,.9),rgba(0,0,0,0.9)) !important;
+}
+nav a img{
+    width: 100%;
+    width: 200px;
+    height:100% ;
+    max-height: 100px;
+}
+nav.bg-transparent {
+    background: transparent;
+    transition: all .3s ease;
+}
+
+nav.navbar.navbar-expand-md.bg-dark.navbar-dark.fixed-top:hover{
+	background: black!important;
+	transition: all .3s ease-in;
+
+}
+
+
+
+
+nav ul li.nav-item a{
+	color: white!important;
+	font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease-in ;
+    text-transform: uppercase;
+	
+}
+
+nav ul li.nav-item a:hover{
+	color: red !important;
+}
+
+@media only screen and (min-width: 992px){
+	.nav-scroll{
+		margin: 0 35px;
+	    transition: all .6s ease;
+	}
+
+	.logo{
+		display: block!important;
+		transition: all .9s ease;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	img#logo{
+		display: none!important;
+	}
+}
+
+.bg-menu {
+   background: black!important;
+  
+   
+}
+
+button.navbar-toggler{
+	color:white !important;
+	background:  transparent !important;
+	border-radius: 0  !important;
+	border: 1px solid white !important;
+}
+button.navbar-toggler:hover{
+	background: red!important;
+	color: white !important;
+	outline: none !important;
+
+}
+/* ====================slider section============================ */
+.slider{
+    background: url('..//image/bg-2.jpg') no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.para{
+    color: tomato;
+    padding-top: 250px;
+    font-size: 20px;
+}
+.slider .big-text h2{
+    color: white;
+    font-weight: 700;
+    
+}
+
+
+
+@media screen  and (min-width:1000px){
+.slider .big-text h2{
+    font-size: 50px;
+}
+
+}
+.slider .btn1{
+    width: 230px;
+    margin: 40px;
+    padding: 20px 0 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: rgb(238, 49, 49);
+    border-radius: 0;
+    outline: none;
+    transition: all .4s ease-in;
+    margin-bottom: 200px;
+}
+.slider .btn1 a{
+    text-decoration: none;
+    color: white;
+    transition: all .4s ease-in;
+}
+.slider .btn1:hover {
+    background: yellow;
+    
+}
+.slider .btn1:hover a{
+    color: black;
+}
+
+/* =================end slider======================= */
+
+
+/* ====scrolltop== */
+
+.scrollToTopBtn  {
+    color: white;
+    background: deepskyblue;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    width: 40px;
+     height: 40px;
+     outline: none;
+     border-radius: 50%;
+     border: 1px solid white;
+     line-height: 40px;
+     text-align: center;
+     cursor: pointer;
+    
+    
+  }
+ 
+      
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+/* endscroll top */
+
+/* ===============user experience=============================== */
+.user-exp .user-text{
+    color: white;
+}
+.user-text h2{
+    font-weight: 700;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+.user-text p{
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.user-exp .user-text2{
+    color: white;
+}
+.user-text2 p{
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.user-exp .underline{
+    width: 60px;
+    background-color: white;
+    height: 1px;
+    margin-left: 150px;
+    position: relative;
+}
+.user-exp .writer{
+    color: white;
+    font-size: 18px;
+    float: left;
+    margin-top: -20px ;
+    margin-bottom: 20px;
+    
+}
+.years-exp{
+    margin-top: 30px;
+    font-size: 30px;
+    display: flex;
+    font-weight: 700;
+    line-height: 2;
+}
+.years-exp span{
+    margin-right: 15px;
+    margin-top: -3px;
+}
+.years-exp h4{
+    margin-top: 10px;
+}
+/* ===============end user exp================= */
+/* ==================services======================== */
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(223, 71, 71);
+    outline: 1px solid slategrey;
+  }
+.services{
+    margin-top: 30px;
+}
+.img-holder{
+    overflow: hidden;
+    
+}
+.img-holder img{
+    transition: .4s ease;
+    
+}
+.img-holder:hover img{
+    transform: scale(1.1);
+    cursor: zoom-in;
+    overflow: hidden;
+}
+
+
+/* ====================end services======================== */
+
+/* =================gallery section================ */
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.gallery .underline{
+    width: 80px;
+    background: white;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.img-wrapper{
+    overflow: hidden;
+}
+.img-wrapper img{
+    width: 100%;
+    transition: .4s ease;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/* ===============end galley======== */
+
+/* ========achievements================================ */
+.achievement .underline{
+    width: 60px;
+    background-color: white;
+    height: 1px;
+    margin-left: 150px;
+    position: relative;
+    margin: auto;
+}
+.achievements-images{
+    border: 1px solid white;
+    margin-bottom: 2px;
+    padding: 5px;
+    padding-top: 7px;
+}
+
+
+
+/* ==============end achievements============= */
+/* ====================testimonials=============== */
+.testimonials{
+    background: url('..//image/Black-Wood-Footer-Background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.testimonials .underline{
+    width: 60px;
+    background-color: white;
+    height: 1px;
+    margin-left: 150px;
+    position: relative;
+    margin: auto;
+}
+.carousel-item  img{
+    width: 100%;
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 3px;
+}
+.carousel-item {
+    color: white;
+}
+ol.carousel-indicators{
+    margin-bottom: 0;
+}
+
+/* =========end testimonials============ */
+/* =====================blog================ */
+.blog .blog-text{
+    background: rgb(41, 41, 41);
+    
+    padding: 5px;
+} 
+.blog-text span{
+    color: rgb(167, 167, 167);
+    margin-top: -20px;
+
+}
+.blog-text a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+    transition: all .5s ease-in;
+    color: white;
+}
+.blog-text a:hover{
+    color: rgb(245, 58, 58);
+}
+
+
+
+/* ================end blog============= */
+/* =============foooter============== */
+
+.footer ul{
+    display: block;
+    padding: 4px;
+    text-align: center;
+}
+.footer ul li a{
+    color: rgb(121, 121, 121);
+    transition: all.4s ease-in;
+}
+.footer ul li a:hover{
+    color: rgb(238, 49, 49);
+    text-decoration: none;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid rgb(243, 243, 243);
+    border-radius: 50%;
+    background-color: deeppink;
+    transition: all .4s ease-in;
+    
+    
+}
+.social-icons i:hover{
+    color: deeppink;
+    background: white;
+    border: 1px solid white;
+    transform: rotate(360deg);
+
+}
+
+
+
+
+/* =======end footer========= */
+
+/* ============================================================ */
+
+
+/* END INDEX PAGE */
+
+/* ============================================================ */
+
+
+
+/* ============================================================ */
+/* ABOUT PAGE */
+
+/* ============================================================ */
+
+/* =============================about us=============================== */
+.about-container{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.mission-text h2{
+    color: white;
+    text-transform: capitalize;
+}
+.mission-text .underline{
+    width: 60px;
+    background-color: white;
+    height: 1px;
+    margin-left: 150px;
+    position: relative;
+    margin: auto;
+}
+.mission-text p{
+    color: tomato;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+/* end about us */
+
+/* =========================================================== */
+/* end of about page */
+/* ================================================= */
+
+
+/* =================================================== */
+/* gallery page */
+
+
+.gallery-section h2{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.gallery-section .underline{
+    width: 60px;
+    background-color: white;
+    height: 1px;
+    margin-left: 150px;
+    position: relative;
+    margin: auto;
+}
+.btn-load{
+    width: 200px;
+    padding: 15px 0 15px 0;
+    margin-top: 50px;
+    background: tomato;
+    transition: all .4s ease;
+    color: white;
+    border: 0px;
+    font-size: 20px;
+}
+.btn-load a{
+    color: white;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+.btn-load:hover{
+    background: yellow;
+    
+}
+.btn-load:hover a{
+    color: black;
+
+}
+
+
+/* ============================================== */
+/* =========================================================== */
+/* end of galler page */
+/* ================================================= */
+
+
+
+/* =========================================================== */
+/* services page */
+/* ================================================= */
+
+.slider-services{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.slider-services .underline{
+    width: 60px;
+    background-color: white;
+    height: 1px;
+    margin-left: 150px;
+    position: relative;
+    margin: auto;
+}
+
+
+
+
+
+/* =========================================================== */
+/* end of services page */
+/* ================================================= */
+
+
+/* =========================================================== */
+/*blog page */
+/* ================================================= */
+
+.blog-slider .blog-text{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.blog-slider .blog-text p{
+    letter-spacing: 1px;
+}
+.blog-card img{
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    border: none;
+}
+.blog-card span{
+    color: white;
+    margin-top: 0px;
+    background: tomato;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    margin-left: -700px;
+    font-size: 18px;
+    
+}
+
+
+
+/* =========================================================== */
+/* end blog page */
+/* ================================================= */
+
+/* =========================================================== */
+/* contacts page */
+/* ================================================= */
+
+.btn-submit{
+    color: white;
+    margin: 20px;
+    background: tomato;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    border-radius: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all .4s ease;
+    border: none;
+}
+.btn-submit:hover{
+    color: black;
+    background: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================== */
+/* contacts page */
+/* ================================================= */
+
+
